@@ -258,7 +258,7 @@ void test_copyIfReverse(){
     test_copyIfReverse_2_letter_copying();
 }
 
-int main() {
+void test() {
     test_find();
     test_findNonSpace();
     test_findSpace();
@@ -268,6 +268,10 @@ int main() {
     test_copy();
     test_copyIf();
     test_copyIfReverse();
+}
+
+int main(){
+    test();
 
     return 0;
 }
