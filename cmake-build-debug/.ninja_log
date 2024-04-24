@@ -1,8 +1,16 @@
 # ninja log v5
-0	114	7356790644603226	build.ninja	678d57b9728b65cb
-12	141	7347405450274192	CMakeFiles/untitled1.dir/libs/string/tasks/string_.c.obj	1c64e0c52efb1abf
-175	335	7347417076368813	untitled1.exe	690b241a7eec7f78
-3	175	7347417074818459	CMakeFiles/untitled1.dir/main.c.obj	a64143d11c4bfea
-1	100	7356827225825681	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+0	114	7356858987789235	build.ninja	678d57b9728b65cb
 3	213	7356827226954984	CMakeFiles/untitled1.dir/libs/string/tasks/string_.c.obj	ccbf52f5feaade65
 213	289	7356827227684538	untitled1.exe	7e5f4f6507c9457d
+1	100	7356827225825681	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+2	99	7356867302398301	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+4	99	7356867302398301	CMakeFiles/untitled1.dir/libs/string/tasks/string_.c.obj	ccbf52f5feaade65
+99	166	7356867303047908	untitled1.exe	7e5f4f6507c9457d
+2	90	7356867765367527	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+91	157	7356867765997144	untitled1.exe	7e5f4f6507c9457d
+3	82	7356869865297659	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+82	155	7356869865997452	untitled1.exe	7e5f4f6507c9457d
+2	77	7356870117826963	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+77	146	7356870118478211	untitled1.exe	7e5f4f6507c9457d
+3	82	7356870979616105	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+83	154	7356870980285693	untitled1.exe	7e5f4f6507c9457d

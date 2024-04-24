@@ -60,4 +60,10 @@ char *getEndOfString(char *s);
 // новая функция тестирования, которая дает информацию о том, где именно произошла ошибка
 void assertString(const char *expected, char *got, char const *fileName, char const *funcName, int line);
 
+// Преобразовывает строку, оставляя только один символ в каждой последовательности подряд идущих одинаковых символов
+void removeAdjacentEqualLetters(char *s);
+
+
+
+
 #endif

@@ -99,7 +99,8 @@
 			"sourceIndexes" : 
 			[
 				1,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -125,6 +126,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libs/string/tasks/remove_non_letters.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libs/string/tasks/remove_adjacent_equal_letters.h",
 			"sourceGroupIndex" : 1
 		}
 	],
