@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(untitled1 main.c
         libs/string/tasks/string_.h
-        libs/string/tasks/string_.c)
+        libs/string/tasks/string_.c
+        libs/string/tasks/remove_non_letters.h
+)
