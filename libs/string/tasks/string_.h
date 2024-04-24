@@ -6,9 +6,20 @@
 #include <memory.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, __FILE__, __FUNCTION__, __LINE__)
 
+#define MAX_WORD_SIZE 30
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_STRING_SIZE 200
+
+extern char _stringBuffer[MAX_STRING_SIZE + 1];
+
+typedef struct WordDescriptor {
+    char *begin; // позиция начала слова
+    char *end; // позиция первого символа, после последнего символа слова
+} WordDescriptor;
 
 // возвращает количество символов в строке (не считая ноль-символ)
 size_t strlen_(const char *begin);
@@ -63,7 +74,10 @@ void assertString(const char *expected, char *got, char const *fileName, char co
 // Преобразовывает строку, оставляя только один символ в каждой последовательности подряд идущих одинаковых символов
 void removeAdjacentEqualLetters(char *s);
 
+// возвращает true, если слово было считано, иначе false
+bool getWord(char *beginSearch, WordDescriptor *word);
 
-
+// считывает слова с конца строки
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
 #endif
