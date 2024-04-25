@@ -1,5 +1,7 @@
 #include "string_.h"
 
+char stringBuffer_[MAX_STRING_SIZE + 1];
+
 size_t strlen_(const char *begin) {
     char *end = begin;
 

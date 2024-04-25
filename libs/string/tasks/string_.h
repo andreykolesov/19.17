@@ -10,11 +10,11 @@
 
 #define ASSERT_STRING(expected, got) assertString(expected, got, __FILE__, __FUNCTION__, __LINE__)
 
-#define MAX_WORD_SIZE 30
+#define MAX_STRING_SIZE 100
 #define MAX_N_WORDS_IN_STRING 100
-#define MAX_STRING_SIZE 200
+#define MAX_WORD_SIZE 20
 
-extern char _stringBuffer[MAX_STRING_SIZE + 1];
+extern char stringBuffer_[MAX_STRING_SIZE + 1];
 
 typedef struct WordDescriptor {
     char *begin; // позиция начала слова
@@ -62,17 +62,11 @@ char *copyIf(char *beginSource, const char *endSource, char *beginDestination, i
 // удовлетворяющие функции-предикату f. Функция возвращает значение beginDestination по окончанию работы функции
 char *copyIfReverse(char *r_beginSource, const char *r_endSource, char *beginDestination, int (*f)(int));
 
-// удаляет из строки все пробельные символы.
-void removeNonLetters(char *s);
-
 // возвращает адрес последнего элемента строки
 char *getEndOfString(char *s);
 
 // новая функция тестирования, которая дает информацию о том, где именно произошла ошибка
 void assertString(const char *expected, char *got, char const *fileName, char const *funcName, int line);
-
-// Преобразовывает строку, оставляя только один символ в каждой последовательности подряд идущих одинаковых символов
-void removeAdjacentEqualLetters(char *s);
 
 // возвращает true, если слово было считано, иначе false
 bool getWord(char *beginSearch, WordDescriptor *word);
