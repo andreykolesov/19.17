@@ -26,6 +26,8 @@ void replaceDigitToSpace(char *s) {
     }
 
     *rec_ptr = '\0';
+
+    freeString(stringBuffer_);
 }
 
 void test_4_empty() {

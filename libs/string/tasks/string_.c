@@ -136,3 +136,12 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
 
     return true;
 }
+
+void freeString(char* s){
+    char* ptr = s;
+
+    while (*ptr != '\0') {
+        *ptr = '\0';
+        ptr++;
+    }
+}

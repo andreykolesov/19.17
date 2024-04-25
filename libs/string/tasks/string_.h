@@ -74,4 +74,7 @@ bool getWord(char *beginSearch, WordDescriptor *word);
 // считывает слова с конца строки
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 
+// очищает строку, путем замены всех символов на \0
+void freeString(char* s);
+
 #endif
