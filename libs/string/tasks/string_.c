@@ -137,11 +137,20 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     return true;
 }
 
-void freeString(char* s){
-    char* ptr = s;
+void freeString(char *s) {
+    char *ptr = s;
 
     while (*ptr != '\0') {
         *ptr = '\0';
         ptr++;
     }
+}
+
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    while (*w1.begin != '\0' && *w2.begin != '\0' && (*w1.begin == *w2.begin)) {
+        w1.begin++;
+        w2.begin++;
+    }
+
+    return *(const unsigned char *) w1.begin - *(const unsigned char *) w2.begin;
 }
