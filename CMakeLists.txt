@@ -15,4 +15,5 @@ add_executable(untitled1 main.c
         libs/string/tasks/print_reverse_order.h
         libs/string/tasks/amount_of_palindromes.h
         libs/string/tasks/shuffling_words.h
+        libs/string/tasks/change_word_order.h
 )

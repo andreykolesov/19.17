@@ -7,6 +7,7 @@
 #include "libs/string/tasks/print_reverse_order.h"
 #include "libs/string/tasks/amount_of_palindromes.h"
 #include "libs/string/tasks/shuffling_words.h"
+#include "libs/string/tasks/change_word_order.h"
 
 int main() {
     test_1_removeNonLetters();
@@ -18,6 +19,7 @@ int main() {
     test_7_printReverseOrder(); // выводит строки
     test_8_amountOfPalindromes();
     test_9_shufflingWords();
+    test_10_changeWordOrder();
 
     return 0;
 }
