@@ -47,7 +47,7 @@ void test_7_more_word() {
 }
 
 
-void test_7_printReverseOrdered() {
+void test_7_printReverseOrder() {
     printf("Test 7: \n");
     test_7_empty();
     test_7_one_word();

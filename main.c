@@ -5,6 +5,7 @@
 #include "libs/string/tasks/replace_word_to_word.h"
 #include "libs/string/tasks/lexicographical_order.h"
 #include "libs/string/tasks/print_reverse_order.h"
+#include "libs/string/tasks/amount_of_palindromes.h"
 
 int main() {
     test_1_removeNonLetters();
@@ -13,7 +14,8 @@ int main() {
     test_4_replaceDigitToSpace();
     test_5_replace_word_to_word();
     test_6_lexicographicalOrder(); // bool функция, поэтому нет вывода
-    test_7_printReverseOrdered(); // выводит строки
+    test_7_printReverseOrder(); // выводит строки
+    test_8_amountOfPalindromes();
 
     return 0;
 }

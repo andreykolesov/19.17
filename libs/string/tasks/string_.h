@@ -91,4 +91,7 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
 // производит вывод слова
 void printWord(WordDescriptor word);
 
+// проверяет слово на палиндром
+bool isPalindrome(WordDescriptor *word);
+
 #endif

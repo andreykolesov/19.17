@@ -158,11 +158,26 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
     return *(const unsigned char *) w1.begin - *(const unsigned char *) w2.begin;
 }
 
-void printWord(WordDescriptor word){
-    while (word.begin != word.end){
+void printWord(WordDescriptor word) {
+    while (word.begin != word.end) {
         printf("%c", *word.begin);
         word.begin++;
     }
 
     printf(" ");
+}
+
+bool isPalindrome(WordDescriptor *word) {
+    char *begin = word->begin;
+    char *end = word->end - 1;
+
+    while (begin < end) {
+        if (*begin != *end)
+            return false;
+
+        begin++;
+        end--;
+    }
+
+    return true;
 }
