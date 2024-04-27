@@ -2,6 +2,9 @@
 
 char stringBuffer_[MAX_STRING_SIZE + 1];
 
+BagOfWords _bag;
+BagOfWords _bag2;
+
 size_t strlen_(const char *begin) {
     char *end = begin;
 
@@ -153,4 +156,13 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
     }
 
     return *(const unsigned char *) w1.begin - *(const unsigned char *) w2.begin;
+}
+
+void printWord(WordDescriptor word){
+    while (word.begin != word.end){
+        printf("%c", *word.begin);
+        word.begin++;
+    }
+
+    printf(" ");
 }

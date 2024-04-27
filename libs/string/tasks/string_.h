@@ -26,6 +26,8 @@ typedef struct BagOfWords {
     size_t size;
 } BagOfWords;
 
+extern BagOfWords _bag;
+extern BagOfWords _bag2;
 
 // возвращает количество символов в строке (не считая ноль-символ)
 size_t strlen_(const char *begin);
@@ -86,7 +88,7 @@ void freeString(char* s);
 // возвращает 0, если слова равны. в противном случае - ненулевое значение
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
 
-// получает позиции начала и конца строки каждого слова строки
-void getBagOfWords(BagOfWords *bag, char *s);
+// производит вывод слова
+void printWord(WordDescriptor word);
 
 #endif

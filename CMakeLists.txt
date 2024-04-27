@@ -12,4 +12,5 @@ add_executable(untitled1 main.c
         libs/string/tasks/replace_digit_to_space.h
         libs/string/tasks/replace_word_to_word.h
         libs/string/tasks/lexicographical_order.h
+        libs/string/tasks/print_reverse_order.h
 )
