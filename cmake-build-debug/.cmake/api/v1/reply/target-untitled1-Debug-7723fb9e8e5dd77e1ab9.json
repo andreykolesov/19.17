@@ -110,7 +110,8 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15
 			]
 		}
 	],
@@ -191,6 +192,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libs/string/tasks/find_last_equal_word.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libs/string/tasks/are_equal_words_in_string.h",
 			"sourceGroupIndex" : 1
 		}
 	],

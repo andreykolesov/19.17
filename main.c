@@ -10,6 +10,7 @@
 #include "libs/string/tasks/change_word_order.h"
 #include "libs/string/tasks/get_word_before_first_word_with_a.h"
 #include "libs/string/tasks/find_last_equal_word.h"
+#include "libs/string/tasks/are_equal_words_in_string.h"
 
 int main() {
     test_1_removeNonLetters();
@@ -17,13 +18,14 @@ int main() {
     test_3_reverseWord();
     test_4_replaceDigitToSpace();
     test_5_replace_word_to_word();
-    test_6_lexicographicalOrder(); // bool функция, поэтому нет вывода
+    test_6_lexicographicalOrder(); // bool, поэтому нет вывода
     test_7_printReverseOrder(); // выводит строки
     test_8_amountOfPalindromes();
     test_9_shufflingWords();
     test_10_changeWordOrder();
     test_11_all_tests_getWordBeforeFirstWordWithA();
     test_12_findLastEqualWord();
+    test_13_areEqualWordsInString(); // bool, поэтому нет вывода
 
     return 0;
 }
