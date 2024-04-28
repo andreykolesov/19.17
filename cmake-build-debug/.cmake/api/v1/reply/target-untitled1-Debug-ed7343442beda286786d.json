@@ -112,7 +112,8 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17
 			]
 		}
 	],
@@ -203,6 +204,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libs/string/tasks/find_words_from_same_sets_letters.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libs/string/tasks/get_word_except_last.h",
 			"sourceGroupIndex" : 1
 		}
 	],
