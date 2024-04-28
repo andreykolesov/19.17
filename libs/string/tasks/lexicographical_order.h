@@ -4,6 +4,15 @@
 #include "string_.h"
 #include <assert.h>
 
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    while (*w1.begin != '\0' && *w2.begin != '\0' && (*w1.begin == *w2.begin)) {
+        w1.begin++;
+        w2.begin++;
+    }
+
+    return *(const unsigned char *) w1.begin - *(const unsigned char *) w2.begin;
+}
+
 bool isLexicographicalOrder(char *s) {
     char *begin_search = s;
     WordDescriptor w1, w2;

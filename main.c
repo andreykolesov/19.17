@@ -9,6 +9,7 @@
 #include "libs/string/tasks/shuffling_words.h"
 #include "libs/string/tasks/change_word_order.h"
 #include "libs/string/tasks/get_word_before_first_word_with_a.h"
+#include "libs/string/tasks/find_last_equal_word.h"
 
 int main() {
     test_1_removeNonLetters();
@@ -22,6 +23,7 @@ int main() {
     test_9_shufflingWords();
     test_10_changeWordOrder();
     test_11_all_tests_getWordBeforeFirstWordWithA();
+    test_12_findLastEqualWord();
 
     return 0;
 }

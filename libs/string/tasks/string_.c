@@ -149,15 +149,6 @@ void freeString(char *s) {
     }
 }
 
-int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
-    while (*w1.begin != '\0' && *w2.begin != '\0' && (*w1.begin == *w2.begin)) {
-        w1.begin++;
-        w2.begin++;
-    }
-
-    return *(const unsigned char *) w1.begin - *(const unsigned char *) w2.begin;
-}
-
 void printWord(WordDescriptor word) {
     while (word.begin != word.end) {
         printf("%c", *word.begin);
@@ -178,6 +169,57 @@ bool isPalindrome(WordDescriptor *word) {
         begin++;
         end--;
     }
+
+    return true;
+}
+
+void wordDescriptorToString(WordDescriptor word, char *destination) {
+    if (word.begin == NULL && word.end == NULL)
+        return;
+
+    while (word.begin <= word.end) {
+        *destination = *word.begin;
+        word.begin++;
+        destination++;
+    }
+
+    *destination = '\0';
+}
+
+bool getWordWithoutSpace(char *begin_search, WordDescriptor *word) {
+    word->begin = findNonSpace(begin_search);
+
+    if (*word->begin == '\0')
+        return false;
+
+    word->end = findSpace(word->begin) - 1;
+
+    return true;
+}
+
+void freeBag(BagOfWords *bag) {
+    for (int i = 0; i < bag->size; i++) {
+        bag->words[i].begin = NULL;
+        bag->words[i].end = NULL;
+    }
+
+    bag->size = 0;
+}
+
+bool isWordEqual(WordDescriptor word1, WordDescriptor word2){
+    char* begin1 = word1.begin;
+    char* begin2 = word2.begin;
+
+    while (begin1 < word1.end && begin2 < word2.end) {
+        if (*begin1 != *begin2)
+            return false;
+
+        begin1++;
+        begin2++;
+    }
+
+    if (word1.end - begin1 > 0 || word2.end - begin2 > 0)
+        return false;
 
     return true;
 }

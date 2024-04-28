@@ -85,13 +85,22 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
 // очищает строку, путем замены всех символов на \0
 void freeString(char* s);
 
-// возвращает 0, если слова равны. в противном случае - ненулевое значение
-int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
-
 // производит вывод слова
 void printWord(WordDescriptor word);
 
 // проверяет слово на палиндром
 bool isPalindrome(WordDescriptor *word);
+
+// выполняет перевод WordDescriptor в char*
+void wordDescriptorToString(WordDescriptor word, char *destination);
+
+// возвращает true, если слово без пробела было считано, иначе false
+bool getWordWithoutSpace(char *begin_search, WordDescriptor *word);
+
+// очищает "мешок" со значениями
+void freeBag(BagOfWords *bag);
+
+// возвращает true, если слова равны, иначе false
+bool isWordEqual(WordDescriptor word1, WordDescriptor word2);
 
 #endif

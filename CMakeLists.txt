@@ -17,4 +17,5 @@ add_executable(untitled1 main.c
         libs/string/tasks/shuffling_words.h
         libs/string/tasks/change_word_order.h
         libs/string/tasks/get_word_before_first_word_with_a.h
+        libs/string/tasks/find_last_equal_word.h
 )
