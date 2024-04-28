@@ -19,4 +19,5 @@ add_executable(untitled1 main.c
         libs/string/tasks/get_word_before_first_word_with_a.h
         libs/string/tasks/find_last_equal_word.h
         libs/string/tasks/are_equal_words_in_string.h
+        libs/string/tasks/find_words_from_same_sets_letters.h
 )

@@ -111,7 +111,8 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16
 			]
 		}
 	],
@@ -197,6 +198,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libs/string/tasks/are_equal_words_in_string.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libs/string/tasks/find_words_from_same_sets_letters.h",
 			"sourceGroupIndex" : 1
 		}
 	],

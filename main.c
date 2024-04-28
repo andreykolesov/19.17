@@ -11,6 +11,7 @@
 #include "libs/string/tasks/get_word_before_first_word_with_a.h"
 #include "libs/string/tasks/find_last_equal_word.h"
 #include "libs/string/tasks/are_equal_words_in_string.h"
+#include "libs/string/tasks/find_words_from_same_sets_letters.h"
 
 int main() {
     test_1_removeNonLetters();
@@ -26,6 +27,7 @@ int main() {
     test_11_all_tests_getWordBeforeFirstWordWithA();
     test_12_findLastEqualWord();
     test_13_areEqualWordsInString(); // bool, поэтому нет вывода
+    test_14_areIdenticalWordsInString();
 
     return 0;
 }
