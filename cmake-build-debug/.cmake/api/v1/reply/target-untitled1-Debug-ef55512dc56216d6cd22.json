@@ -114,7 +114,8 @@
 				15,
 				16,
 				17,
-				18
+				18,
+				19
 			]
 		}
 	],
@@ -215,6 +216,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "libs/string/tasks/find_preceding_word.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "libs/string/tasks/remove_palindromes.h",
 			"sourceGroupIndex" : 1
 		}
 	],

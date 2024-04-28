@@ -14,6 +14,7 @@
 #include "libs/string/tasks/find_words_from_same_sets_letters.h"
 #include "libs/string/tasks/get_word_except_last.h"
 #include "libs/string/tasks/find_preceding_word.h"
+#include "libs/string/tasks/remove_palindromes.h"
 
 int main() {
     test_1_removeNonLetters();
@@ -32,6 +33,7 @@ int main() {
     test_14_areIdenticalWordsInString();
     test_15_getWordExceptLast();
     test_16_findPrecedingWord();
+    test_17_removePalindromes();
 
     return 0;
 }

@@ -22,4 +22,5 @@ add_executable(untitled1 main.c
         libs/string/tasks/find_words_from_same_sets_letters.h
         libs/string/tasks/get_word_except_last.h
         libs/string/tasks/find_preceding_word.h
+        libs/string/tasks/remove_palindromes.h
 )
