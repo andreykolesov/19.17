@@ -1,8 +1,8 @@
 # ninja log v5
-1	77	7360214510379756	build.ninja	98380c0ee69e38a9
+1	77	7360250182331915	build.ninja	98380c0ee69e38a9
 2	134	7357754910266721	libuntitled1.a	e2d977ee73155f09
 2	106	7360099704915127	CMakeFiles/untitled1.dir/libs/string/tasks/string_.c.obj	ccbf52f5feaade65
-203	271	7360213318857839	untitled1.exe	7e5f4f6507c9457d
-3	203	7360213318208236	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
-3	208	7360236914689348	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
 209	277	7360236915328950	untitled1.exe	7e5f4f6507c9457d
+3	208	7360236914689348	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+2	280	7360259120710319	CMakeFiles/untitled1.dir/main.c.obj	5ad156bdbdb725f0
+280	349	7360259121369917	untitled1.exe	7e5f4f6507c9457d

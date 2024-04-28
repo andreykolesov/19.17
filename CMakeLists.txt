@@ -24,4 +24,5 @@ add_executable(untitled1 main.c
         libs/string/tasks/find_preceding_word.h
         libs/string/tasks/remove_palindromes.h
         libs/string/tasks/balance_string.h
+        libs/string/tasks/letters_belong_string.h
 )
